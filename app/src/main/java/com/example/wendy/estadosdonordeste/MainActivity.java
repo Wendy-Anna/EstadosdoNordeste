@@ -31,36 +31,62 @@ public class MainActivity extends Activity implements OnClickListener {
         five.setOnClickListener(this);
     }
     public void onClick(View v){
+
         switch (v.getId()) {
+
             case R.id.botao1:
                 TextView view = (TextView) findViewById(R.id.textView1);
-                view.setText("A história da Bahia é um domínio de estudos de história que, canonicamente, se estende desde a chegada dos portugueses, em Porto Seguro, em 1500, até os dias atuais.");
-                view.setTextSize(25);
+                if (view.getVisibility() == View.GONE) {
+                    view.setVisibility(View.VISIBLE);
+                } else {
+                    view.setVisibility(View.GONE);
+                }
+
+
                 break;
+
             case R.id.botao2:
                 TextView view2 = (TextView) findViewById(R.id.textView2);
-                view2.setText( "O Ceará foi formado por indígenas catequizados e aculturados ,após grande resistência à colonização de negros e mulatos que viviam como trabalhadores livres ou como escravos.");
-                view2.setTextSize(25);
+                if (view2.getVisibility() == View.GONE) {
+                    view2.setVisibility(View.VISIBLE);
+                } else {
+                    view2.setVisibility(View.GONE);
+                }
+
                 break;
+
             case R.id.botao3:
                 TextView view3 = (TextView) findViewById(R.id.textView3);
-                view3.setText("Na Paraíba grupos étnicos indígenas dividiam-se em dois no momento da chegada dos europeus: os Tupis e os Cariris também chamados de Tapuias. Os Tupis se dividiam em Tabajaras e Potiguaras, que eram inimigos entre si.");
-                view3.setTextSize(25);
-                ;
+                if (view3.getVisibility() == View.GONE) {
+                    view3.setVisibility(View.VISIBLE);
+                } else {
+                    view3.setVisibility(View.GONE);
+                }
+
                 break;
+
             case R.id.botao4:
                 TextView view4 = (TextView) findViewById(R.id.textView4);
-                view4.setText("A História de Pernambuco começa antes do descobrimento do Brasil, quando o atual território do estado era povoado pelos índios tabajaras." + "\n");
-                view4.setTextSize(25);
+                if (view4.getVisibility() == View.GONE) {
+                    view4.setVisibility(View.VISIBLE);
+                } else {
+                    view4.setVisibility(View.GONE);
+                }
                 break;
+
             case R.id.botao5:
                 TextView view5 = (TextView) findViewById(R.id.textView5);
-                view5.setText("\n" +
-                        "A História do estado do Rio Grande do Norte, inicia-se a partir do povoamento do território brasileiro, quando houve uma onda de migrações para os Andes, depois para o Planalto do Brasil, a região Nordeste, até chegarem ao Rio Grande do Norte. ");
-                view5.setTextSize(25);
+                if (view5.getVisibility() == View.GONE) {
+                    view5.setVisibility(View.VISIBLE);
+                } else {
+                    view5.setVisibility(View.GONE);
+                }
                 break;
+
             default:
                 break;
+
+
         }
     }
 }

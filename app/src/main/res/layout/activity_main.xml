@@ -7,6 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#EF6C00"
     tools:context="com.example.wendy.estadosdonordeste.MainActivity">
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
@@ -19,21 +20,23 @@
             android:orientation="vertical"
             android:weightSum="1">
             <TextView
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:text="Estados do Nordeste"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:text="5 Estados do Nordeste"
                 android:textColor="#000000"
                 android:typeface="serif"
-                android:textSize="25dp"
+                android:textSize="23dp"
                 android:layout_marginTop="25dp"
                 android:layout_gravity="center_horizontal"
-                android:textStyle="italic" />
+                android:textStyle="italic|bold"
+                android:layout_marginLeft="12dp"/>
+
             <ImageView
-                android:layout_width="86dp"
-                android:layout_height="114dp"
+                android:layout_width="69dp"
+                android:layout_height="113dp"
                 android:id="@+id/imageView"
                 android:layout_gravity="right"
-                android:src="@drawable/icone"
+                android:src="@drawable/icone1"
                 android:layout_marginTop="-90dp" />
             <Button
                 android:id="@+id/botao1"
@@ -41,10 +44,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="83dp"
                 android:layout_marginTop="0dp"
-                android:background="@drawable/bahia"
+                android:drawableRight="@drawable/bahia1"
                 android:text="Bahia"
                 android:textAllCaps="false"
-                android:textSize="35sp"
+                android:textSize="25sp"
                 android:layout_weight="0.92"
                 android:onClick="clickbotao"
                 android:gravity="fill_vertical"
@@ -54,22 +57,42 @@
                 android:contextClickable="false"
                 android:textStyle="italic"
                 android:typeface="serif"
-                android:singleLine="false" />
+                android:singleLine="false"
+                android:background="#F57C00"/>
             <TextView
                 android:id="@+id/textView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="-20dp" />
+                android:background="#FB8C00"
+                android:text="
+            \n¥ A Bahia (pronúncia em português: [baˈi.ɐ]).
+            \n
+            \n¥ É uma das 27 unidades federativas do Brasil.
+            \n
+            \n¥ Está situada no sul da Região Nordeste, fazendo limites com oito outros estados brasileiros.
+            \n
+            \n¥ É a mais extensa costa de todos os estados do Brasil com acesso ao Oceano Atlântico.
+            \n
+            \n¥ Ocupa uma área de 564 733,177 km², sendo pouco maior que a França.
+            \n
+            \n¥ Dentre os estados nordestinos, a Bahia representa a maior extensão territorial, a maior população, o maior produto interno bruto e o maior número de municípios.
+            \n
+            \n¥ A capital estadual é Salvador, terceiro município mais populoso do Brasil.
+             \n"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:visibility="gone" />
             <Button
+                android:background="#F57C00"
                 android:id="@+id/botao2"
                 android:layout_width="match_parent"
                 android:layout_height="83dp"
                 android:layout_marginTop="2dp"
                 android:textColor="#000000"
-                android:background="@drawable/ceara"
+                android:drawableRight="@drawable/ceara1"
                 android:text="Ceara"
                 android:textAllCaps="false"
-                android:textSize="35sp"
+                android:textSize="25sp"
                 android:layout_weight="0.92"
                 android:gravity="fill_vertical"
                 android:typeface="serif"
@@ -78,64 +101,131 @@
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="-20dp" />
+                android:background="#FB8C00"
+                android:text="
+            \n¥ O Ceará é uma das 27 unidades federativas do Brasil.
+           \n
+            \n¥ Está situado no norte da Região Nordeste e tem por limites o Oceano Atlântico a norte e nordeste, Rio Grande do Norte e Paraíba a leste, Pernambuco ao sul e Piauí a oeste.
+            \n
+            \n¥ Sua área total é de 148 920,472 km², ou 9,37% da área do Nordeste e 1,74% da superfície do Brasil.
+           \n
+            \n¥ A população do estado estimada para o ano de 2015 foi de 8.904.459 habitantes, conferindo ao território a oitava colocação entre as unidades federativas mais populosas.
+           \n
+            \n¥ A capital e município mais populoso é Fortaleza, sede da Região Metropolitana de Fortaleza (RMF).
+             \n"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:visibility="gone" />
             <Button
+                android:background="#F57C00"
                 android:id="@+id/botao3"
                 android:layout_width="match_parent"
                 android:layout_height="83dp"
                 android:textColor="#000000"
                 android:layout_marginTop="2dp"
-                android:background="@drawable/paraiba"
-                android:text="Paraiba"
+                android:drawableRight="@drawable/paraiba1"
+                android:text="Paraíba"
                 android:textAllCaps="false"
-                android:textSize="35sp"
+                android:textSize="25sp"
                 android:layout_weight="0.92"
                 android:gravity="fill_vertical"
-                android:typeface="serif" />,
+                android:typeface="serif"
+                android:textStyle="italic"/>
+
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:background="#FB8C00"
+                android:text="
+           \n¥ A Paraíba é uma das 27 unidades federativas do Brasil.
+           \n
+           \n¥ Localiza-se no leste da Região Nordeste.
+           \n
+           \n¥ Limita-se com três estados: Rio Grande do Norte (norte), Pernambuco (sul) e Ceará(oeste).
+           \n
+           \n¥ Sua área é de 56 469,778 km², pouco menor que a Croácia.
+           \n
+           \n¥ Com uma população de mais de 3,9 milhões habitantes, a Paraíba é o 13º estado mais populoso do Brasil.
+           \n
+           \n¥ A capital é a cidade mais populosa, João Pessoa.
+           \n
+           \n¥ Está dividido em quatro mesorregiões, 23 microrregiões e 223 municípios. Outros municípios com população superior a cem mil habitantes são: Campina Grande, Santa Rita, Patos e Bayeux.
+            \n"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:visibility="gone" />
             <Button
+                android:background="#F57C00"
                 android:id="@+id/botao4"
                 android:layout_width="match_parent"
                 android:layout_height="83dp"
                 android:textColor="#000000"
                 android:layout_marginTop="-20dp"
-                android:background="@drawable/pernambuco"
+                android:drawableRight="@drawable/pernambuco1"
                 android:text="Pernambuco"
                 android:textAllCaps="false"
-                android:textSize="35sp"
+                android:textSize="25sp"
                 android:layout_weight="0.33"
                 android:gravity="fill_vertical"
-                android:typeface="serif" />
+                android:typeface="serif"
+                android:textStyle="italic"/>
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:background="#FB8C00"
+                android:text="
+           \n¥ Pernambuco é uma das 27 unidades federativas do Brasil.
+           \n
+           \n¥ Está localizado no centro-leste da região Nordeste e tem como limites os estados da Paraíba, do Ceará, de Alagoas, da Bahia e do Piauí, além de ser banhado pelo oceano Atlântico.
+           \n
+           \n¥ Ocupa uma área de 98 149,119 km² (pouco menor que a Coreia do Sul).
+           \n
+           \n¥ Também fazem parte do seu território os arquipélagos de Fernando de Noronha e São Pedro e São Paulo.
+           \n
+           \n¥ Sua capital é a cidade do Recife e a sede administrativa é o Palácio do Campo das Princesas.
+           \n "
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:visibility="gone" />
             <Button
+                android:background="#F57C00"
                 android:id="@+id/botao5"
                 android:layout_width="match_parent"
                 android:layout_height="83dp"
                 android:layout_marginTop="-20dp"
-                android:background="@drawable/rn"
                 android:text="Rio Grande do Norte"
+                android:drawableRight="@drawable/rn1"
                 android:textColor="#000000"
                 android:textAllCaps="false"
-                android:textSize="35sp"
+                android:textSize="25sp"
                 android:layout_weight="0.33"
                 android:gravity="fill_vertical"
-                android:typeface="serif" />
+                android:typeface="serif"
+                android:textStyle="italic"/>
+
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/textView5"
+                android:background="#FB8C00"
+                android:text="
+                \n¥ Rio Grande do Norte é uma das 27 unidades federativas do Brasil.
+                \n
+                \n¥ Está situado a nordeste da Região Nordeste e tem por limites o Oceano Atlântico a norte a leste, a Paraíba a sul e o Ceará a oeste. É dividido em 167 municípios e sua área total é de 52 811,126 km², o que equivale a 3,42% da área do Nordeste e a 0,62% da superfície do Brasil, sendo um pouco maior que a Costa Rica.
+                \n
+                \n¥  Com mais de três milhões de habitantes, o Rio Grande do Norte é o décimo sexto estado mais populoso do Brasil, possuindo o melhor IDH e a maior renda per capita do Nordeste e a melhor expectativa de vida do Norte-Nordeste (74 anos), acima das médias nacional (73,8 anos) e regional (71,2 anos).
+                \n
+                \n¥ Na bandeira nacional, o estado é representado pela estrela Shaula (λ Scorpius).
+                \n
+                \n¥ A capital do estado é Natal.
+                \n"
                 android:textColor="#000000"
-                android:textSize="15dp"
-                android:layout_marginTop="2dp" />
+                android:textSize="25dp"
+                android:visibility="gone" />
+
+
         </LinearLayout>
     </ScrollView>
 
